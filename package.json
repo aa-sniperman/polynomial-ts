@@ -1,0 +1,24 @@
+{
+  "name": "polynomial-ts",
+  "version": "1.0.0",
+  "description": "Polynomial commitment JS library,compatible with Solidity",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test-all": "ts-mocha -p tsconfig.json src/**/*.test.ts",
+    "test": "ts-mocha -p tsconfig.json",
+    "test-hardhat": "npx hardhat test",
+    "format": "prettier '*/**/*.{ts,js,json,yml,md}' --write"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.12.2",
+    "hardhat-gas-reporter": "^1.0.9",
+    "ts-mocha": "^10.0.0"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "wasmbuilder": "^0.0.16",
+    "web-worker": "^1.2.0"
+  }
+}
